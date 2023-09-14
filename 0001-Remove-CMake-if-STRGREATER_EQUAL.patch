@@ -1,0 +1,27 @@
+From aee19915e9a8ef2787fb6dbc36da6b745ef74094 Mon Sep 17 00:00:00 2001
+From: Michael Ripperger <michael.ripperger@swri.org>
+Date: Thu, 14 Sep 2023 13:47:51 -0500
+Subject: [PATCH] Remove CMake if STRGREATER_EQUAL
+
+---
+ src/python/CMakeLists.txt | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/src/python/CMakeLists.txt b/src/python/CMakeLists.txt
+index ad3398f..058ef57 100644
+--- a/src/python/CMakeLists.txt
++++ b/src/python/CMakeLists.txt
+@@ -8,9 +8,7 @@ target_link_libraries(
+           Boost::numpy
+           ${PYTHON_LIBRARIES})
+ target_compile_definitions(${PROJECT_NAME}_python PRIVATE MODULE_NAME=_${PROJECT_NAME})
+-if($ENV{ROS_DISTRO} STRGREATER_EQUAL "humble")
+-  target_compile_definitions(${PROJECT_NAME}_python PRIVATE ROS2_AT_LEAST_HUMBLE)
+-endif()
++target_compile_definitions(${PROJECT_NAME}_python PRIVATE ROS2_AT_LEAST_HUMBLE)
+ set_target_properties(${PROJECT_NAME}_python PROPERTIES OUTPUT_NAME _${PROJECT_NAME})
+ target_cxx_version(${PROJECT_NAME}_python PUBLIC VERSION 17)
+ 
+-- 
+2.25.1
+

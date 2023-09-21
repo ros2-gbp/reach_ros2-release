@@ -1,3 +1,26 @@
+## reach_ros (humble) - 1.3.2-2
+
+The packages in the `reach_ros` repository were released into the `humble` distro by running `/usr/bin/bloom-release reach_ros -r humble` on `Thu, 21 Sep 2023 20:48:56 -0000`
+
+The `reach_ros` package was released.
+
+Version of package(s) in repository `reach_ros`:
+
+- upstream repository: https://github.com/ros-industrial/reach_ros2
+- release repository: https://github.com/ros2-gbp/reach_ros2-release.git
+- rosdistro version: `1.3.2-1`
+- old version: `1.3.2-1`
+- new version: `1.3.2-2`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## reach_ros (humble) - 1.3.2-1
 
 The packages in the `reach_ros` repository were released into the `humble` distro by running `/usr/bin/bloom-release -r humble reach_ros` on `Thu, 14 Sep 2023 13:53:56 -0000`

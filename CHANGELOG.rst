@@ -2,6 +2,22 @@
 Changelog for package reach_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.4 (2023-09-25)
+------------------
+* Python CMake Update (`#27 <https://github.com/marip8/reach_ros2/issues/27>`_)
+  * Ensure PYTHON_INSTALL_DIR is set by ament
+  * Replace ROS version compile definition with preprocessor check
+* CI Update (`#26 <https://github.com/marip8/reach_ros2/issues/26>`_)
+  * Push docker image on ref_type tag
+  * Added AFTER_SCRIPT to CI
+* Contributors: Michael Ripperger
+
+1.3.3 (2023-09-22)
+------------------
+* Use YAML anchors in reach study config files to simplify (`#24 <https://github.com/marip8/reach_ros2/issues/24>`_)
+* Run CI workflow on tag push and workflow dispatch (`#25 <https://github.com/marip8/reach_ros2/issues/25>`_)
+* Contributors: Michael Ripperger
+
 1.3.2 (2023-09-14)
 ------------------
 * Updated CMake version for if STRGREATER_EQUAL command (`#23 <https://github.com/marip8/reach_ros2/issues/23>`_)
